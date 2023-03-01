@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
+    "lint": "eslint .",
     "url": "git+https://github.com/Zireael112/defender-game.git"
   },
   "keywords": [
@@ -23,7 +25,13 @@
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2"
+    "@babel/preset-env": "^7.20.2",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
   },
   "dependencies": {
     "core-js": "^3.29.0"
